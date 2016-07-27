@@ -1,6 +1,13 @@
-{% for course in courses %}
-<div class="course">
-   <h4 class="title">{{course.title}}</h4>
-   <p class="description"> {{course.description}}</p>
-</div>
-{% endfor %}
+{% extends "layout.html" %}
+{% block title %} All Courses {% endblock %}
+
+{% block content %}
+  <div class="course_list">
+    {% for course in courses %}
+      <div class="course">
+         <h4 class="title">{{course.title}}</h4>
+         <p class="description"> {{course.description}}</p>
+      </div>
+    {% endfor %}
+  </div>
+{% endblock %}

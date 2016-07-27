@@ -124,7 +124,32 @@ article .steps {
 
 /* Costum CSS Follows */
 
-.course {
+.course_list {
   width: 60%;
   margin: 50px auto;
+}
+.course_list .course .title {
+  font-size: 1.4em;
+  font-family: Helvetica;
+}
+
+.course_list .course .title:hover {
+  color: #622;
+  text-decoration: underline;
+  cursor:pointer;
+}
+
+.course_list .course {
+  padding: 15px;
+  background-color: #eee;
+  margin: 10px 0;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  border-top-left-radius: 20px;
+}
+
+.course_list .course:hover {
+  background-color: #fff;
+  border: 2px solid #ddd;
+
 }
