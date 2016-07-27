@@ -5,7 +5,7 @@
 <article>
   <h2>{{course.title}}</h2>
   <p>{{course.description}}</p>
-
+  <hr/>
   <section>
     {% for step in course.step_set.all %}
       <h3>{{step.title}}</h3>
