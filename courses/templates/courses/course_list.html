@@ -2,9 +2,12 @@
 {% block title %} All Courses {% endblock %}
 
 {% block content %}
-  <div class="course_list">
+  <div class="page_heading">
+    All Courses
+  </div>
+  <div class="page_list">
     {% for course in courses %}
-      <div class="course">
+      <div class="item">
          <h4 class="title">{{course.title}}</h4>
          <p class="description"> {{course.description}}</p>
       </div>

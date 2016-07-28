@@ -1,3 +1,6 @@
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display);
+@import url(https://fonts.googleapis.com/css?family=Khula:400,300);
+
 html {
   box-sizing: border-box; }
 
@@ -124,32 +127,46 @@ article .steps {
 
 /* Costum CSS Follows */
 
-.course_list {
+.page_list {
   width: 60%;
   margin: 50px auto;
 }
-.course_list .course .title {
+.page_list .item .title {
   font-size: 1.4em;
-  font-family: Helvetica;
+  font-family: "Playfair Display", serif;
 }
 
-.course_list .course .title:hover {
-  color: #622;
+.page_list .item .title:hover {
   text-decoration: underline;
   cursor:pointer;
 }
 
-.course_list .course {
+.page_list .item {
   padding: 15px;
-  background-color: #eee;
   margin: 10px 0;
-  border: 2px solid #ccc;
-  border-radius: 5px;
-  border-top-left-radius: 20px;
+  border: 2.4px solid #77BDF3;
+  border-radius: 9px;
 }
 
-.course_list .course:hover {
+.page_list .item:hover {
   background-color: #fff;
   border: 2px solid #ddd;
 
+}
+
+.item p.description {
+  font-family: 'Khula', sans-serif;
+  font-weight: 300;
+}
+
+.page_heading {
+    font-family: "Playfair Display", serif;
+    font-size: 1.9em;
+    text-align: center;
+    padding: 25px 0;
+}
+.page_description {
+  text-align: center;
+  font-family: 'Khula', sans-serif;
+  font-weight: 300;
 }
