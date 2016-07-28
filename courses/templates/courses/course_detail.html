@@ -4,7 +4,7 @@
 {% block content %}
 <div class="page_nav">
   <a href="{% url 'views.hello_world' %}"> Home </a>
-  <a href="{% url 'courses.views.course_list' %}"> Catalog </a>
+  <a href="{% url 'courses:list' %}"> Catalog </a>
 </div>
 <article>
   <div class="page_heading">{{course.title}}</div>
@@ -13,7 +13,7 @@
   <section class="page_list">
     {% for step in course.step_set.all %}
       <div class="item">
-        <div class="title"><a href="{% url 'step' step_pk=step.pk course_pk=step.course.pk %}">{{step.title}}</a></div>
+        <div class="title"><a href="{% url 'courses:step' step_pk=step.pk course_pk=step.course.pk %}">{{step.title}}</a></div>
         <p class="description">{{step.description}}</p>
       </div>
     {% endfor %}

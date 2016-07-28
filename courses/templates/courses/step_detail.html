@@ -5,7 +5,9 @@
 {% block content %}
 <div class="page_nav">
   <a href="{% url 'views.hello_world' %}"> Home </a>
-  <a href="{% url 'courses.views.course_list' %}"> Catalog </a>
+  <a href="{% url 'courses:list' %}"> Catalog </a>
+  <a href="{% url 'courses:details' pk=step.course.pk %}"> Back </a>
+
 </div>
 <article>
   <div class="page_heading">{{step.course.title}}</div>
