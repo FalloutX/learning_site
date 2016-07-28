@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block title %} {{step.title }} - {{step.course.title}} {% endblock %}
+
+{% block content %}
+<article>
+  <div class="page_heading">{{step.course.title}}</div>
+  <hr>
+  <div class="page_subheading">{{step.title}}</div>
+  <hr/>
+  <div class="page_description">{{step.description}}</div>
+  
+</article>
+{% endblock %}

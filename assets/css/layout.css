@@ -165,6 +165,12 @@ article .steps {
     text-align: center;
     padding: 25px 0;
 }
+.page_subheading {
+    font-family: "Playfair Display", serif;
+    font-size: 1.4em;
+    text-align: center;
+    padding: 14px 0;
+}
 .page_description {
   text-align: center;
   font-family: 'Khula', sans-serif;
