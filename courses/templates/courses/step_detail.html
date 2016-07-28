@@ -3,12 +3,16 @@
 {% block title %} {{step.title }} - {{step.course.title}} {% endblock %}
 
 {% block content %}
+<div class="page_nav">
+  <a href="{% url 'views.hello_world' %}"> Home </a>
+  <a href="{% url 'courses.views.course_list' %}"> Catalog </a>
+</div>
 <article>
   <div class="page_heading">{{step.course.title}}</div>
   <hr>
   <div class="page_subheading">{{step.title}}</div>
   <hr/>
-  <div class="page_description">{{step.description}}</div>
-  
+  <div class="page_content">{{step.content | linebreaks}}</div>
+
 </article>
 {% endblock %}

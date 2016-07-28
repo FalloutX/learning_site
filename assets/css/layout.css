@@ -131,7 +131,9 @@ article .steps {
   width: 60%;
   margin: 50px auto;
 }
-.page_list .item .title {
+.page_list .item .title a {
+  text-decoration: none;
+  color: #000;
   font-size: 1.4em;
   font-family: "Playfair Display", serif;
 }
@@ -175,4 +177,31 @@ article .steps {
   text-align: center;
   font-family: 'Khula', sans-serif;
   font-weight: 300;
+  margin: 10px 10%;
+}
+.page_content {
+  text-align: justify;
+  font-family: 'Khula', sans-serif;
+  font-weight: 300;
+  margin: 10px 10%;
+}
+
+.page_nav {
+  text-align: right;
+  width: 60%;
+  margin: 10px auto;
+}
+
+.page_nav a {
+  font-family: "Playfair Display", serif;
+  font-size: 1.1em;
+  text-decoration: none;
+  color: #111;
+  padding: 5px 15px;
+  margin: 0px 5px;
+
+}
+
+.page_nav a:hover {
+  border-bottom: 2px solid #77BDF3;
 }

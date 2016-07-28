@@ -2,13 +2,17 @@
 {% block title %} All Courses {% endblock %}
 
 {% block content %}
+  <div class="page_nav">
+    <a href="{% url 'views.hello_world' %}"> Home </a>
+    <a href="{% url 'courses.views.course_list' %}"> Catalog </a>
+  </div>
   <div class="page_heading">
     All Courses
   </div>
   <div class="page_list">
     {% for course in courses %}
       <div class="item">
-         <h4 class="title">{{course.title}}</h4>
+         <h4 class="title"><a href="{% url 'details' pk=course.pk %}">{{course.title}}</a></h4>
          <p class="description"> {{course.description}}</p>
       </div>
     {% endfor %}

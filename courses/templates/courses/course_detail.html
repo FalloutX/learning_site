@@ -2,6 +2,10 @@
 {% block title %} {{course.title}} {% endblock %}
 
 {% block content %}
+<div class="page_nav">
+  <a href="{% url 'views.hello_world' %}"> Home </a>
+  <a href="{% url 'courses.views.course_list' %}"> Catalog </a>
+</div>
 <article>
   <div class="page_heading">{{course.title}}</div>
   <div class="page_description">{{course.description}}</div>
@@ -9,7 +13,7 @@
   <section class="page_list">
     {% for step in course.step_set.all %}
       <div class="item">
-        <div class="title">{{step.title}}</div>
+        <div class="title"><a href="{% url 'step' step_pk=step.pk course_pk=step.course.pk %}">{{step.title}}</a></div>
         <p class="description">{{step.description}}</p>
       </div>
     {% endfor %}
