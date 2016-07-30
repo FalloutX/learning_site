@@ -10,3 +10,12 @@ pip install requirements.txt
 python manage.py migrate
 python manage.py runserver 0.0.0.0:8000
 ```
+
+### Pages
+
+##### Course List Page
+![Main Course List Page](http://i.imgur.com/sVFfvYL.png)
+##### Course Detail Page
+![Course Details Page with list of Steps](http://i.imgur.com/zNrXZBr.png)
+##### Step Detail Page
+![Step Reading Page](http://i.imgur.com/0rjMhz9.png)
